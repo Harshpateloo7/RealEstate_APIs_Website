@@ -6,7 +6,7 @@
 - Node.js
 - Express
 - APIs
-#Project setup
+# Project setup
 - Step 1: Clone repository 
 - Step 2: Open VS Code terminal 
 - Step 3: Run command npm i
