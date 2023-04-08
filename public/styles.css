@@ -1,0 +1,81 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar h2 {
+    margin-left: 70px;
+}
+
+.navbar ul {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+    font-size: 14px;
+}
+/* Image source https://www.google.com/imgres?imgurl=https://www.nrm.org/wp2016/wp-content/uploads/2022/09/studio-fall-1920-px.jpg&tbnid=K7ZP77kY3aoB6M&vet=1&imgrefurl=https://www.nrm.org/collections-2/norman-rockwell-museum-studio/&docid=cHgI-fMRYNTqRM&w=1920&h=1080&hl=en&source=sh/x/im */
+.banner {
+    background: url('./img/bg.png'); 
+    width: 100%;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    display: flex; 
+}
+
+.welcome-container {
+    background-color: #040F2E;
+    width: 60%;
+    padding: 70px;
+    color: #fff;
+}
+
+section {
+    padding: 100px 50px;
+}
+
+.small-container {
+    width: 70%;
+    margin: auto;
+}
+
+.land-size-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.land-size-container img {
+    margin-right: 10px;
+}
+
+.property-grid,
+.attractions-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    grid-auto-rows: 1fr;
+}
+
+.card {
+    box-shadow: 5px 5px 5px #eee;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 5px #bacaf8;
+    transition: 0.3s ease-in-out;
+}
+
+#footer {
+    background-color: #262626;
+    color: #969696;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: auto;
+}

@@ -1,0 +1,17 @@
+extends layout
+
+block main-content 
+    div.small-container.mt-5
+        h1.page-title #{title}
+
+        div.attractions-grid.mt-4
+            if(data && data.length)
+                each item in data
+                    if(item.properties.name)
+                        div.card(style="width: 100%")
+                            div.card-body
+                                h5.card-title 
+                                    strong #{item.properties.name}
+                                p.card-text.text-muted #{item.properties.kinds.replaceAll(",",", ").replaceAll("_"," ")}
+            else
+                p Nothing to show

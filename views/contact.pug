@@ -1,0 +1,27 @@
+extends layout 
+
+block main-content 
+    div.small-container.mt-5
+        h1.page-title #{title}
+
+        form.row.g-3.mt-4
+            div.col-md-6
+                label.form-label(for="inputname") Name
+                input.form-control(type="text", id="inputname")
+    
+            div.col-md-6
+                label.form-label(for="inputemail") Email
+                input.form-control(type="email", id="inputemail")
+    
+            div.col-12
+                label.form-label(for="inputsubject") Subject
+                input.form-control(type="text", id="inputsubject")
+    
+            div.col-12
+                label.form-label(for="inputmessage") Message
+                textarea.form-control(type="text", id="inputmesage", rows=5)
+                
+            div.col-12
+                button.btn.btn-primary.form-control.mt-3(type="submit") Send
+
+    

@@ -1,0 +1,28 @@
+extends layout
+
+block main-content 
+    div.small-container.mt-5
+        h1.page-title #{title}
+
+        div.property-grid.mt-4
+            if(data && data.length)
+                each item in data
+                    div.card(style="width: 100%")
+                        img(src=item.Property.Photo[0].HighResPath, class="card-img-top", alt="...")
+                        div.card-body
+                            div.land-size-container
+                                img(src="./../img/building.svg" alt="...")
+                                span #{item.Land.SizeTotal}
+                            h5.card-title 
+                                strong #{item.Property.Type}
+                            p.card-text #{item.Property.Address.AddressText}
+                            
+                            h6 Listed by 
+                            strong Name - 
+                            span #{item.Individual[0].Name}
+                            if(item.Individual[0].Position)
+                                br
+                                strong Position - 
+                                span #{item.Individual[0].Position}
+            else
+                p Nothing to show   
