@@ -6,3 +6,8 @@
 - Step 2: Open VS Code terminal 
 - Step 3: Run command npm i
 - Step 4: Run command npm run dev
+# What it looks like
+![localhost_8000_Home](https://user-images.githubusercontent.com/64983530/230745421-8b94306b-f44a-40be-b836-0fce06eaaf54.png)
+![localhost_8000_property](https://user-images.githubusercontent.com/64983530/230745423-1a7b892f-1752-4c13-bad8-6bbb832316d2.png)
+![localhost_8000_attraction](https://user-images.githubusercontent.com/64983530/230745429-1652837b-306f-4488-ac5f-1ba834929993.png)
+![localhost_8000_contact](https://user-images.githubusercontent.com/64983530/230745431-72b07e2e-0c88-4b56-b218-a6d7bc88d818.png)
